@@ -1,0 +1,1 @@
+<!-- Stampiamo a schermo una tabella con tutte le prenotazioni (id, prenotazione_id e ospite_id) da prenotazioni_has_ospiti. Quando cliccate sul un link (che sia l'id dell'ospite, un bottone o qualsiasi altra cosa) andrete in un'altra pagina che in base all'id dell'ospite cliccato ritornerà i dati anagrafici di quell'ospite. -->
