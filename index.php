@@ -27,22 +27,23 @@
                         <th>Aggiornata il</th>
                     </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody>
+                  <?php include 'database.php'; ?>
+                  <?php foreach ($rooms as $room) { ?>
+                  <tr>
+                      <td><?php echo $room['id']; ?></td>
+                      <td><?php echo $room['room_number']; ?></td>
+                      <td><?php echo $room['floor']; ?></td>
+                      <td><?php echo $room['beds']; ?></td>
+                      <td><?php echo $room['created_at']; ?></td>
+                      <td><?php echo $room['updated_at']; ?></td>
+                  </tr>
+                  <?php  } ?>
+                </tbody>
             </table>
 
         </div>
-          <tr>
-            <?php include 'database.php'; ?>
-            <?php foreach ($rooms as $room) { ?>
-              <td><?php echo $room['id']; ?></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-          <?php  } ?>
 
-          </tr>
 
     </body>
 </html>
