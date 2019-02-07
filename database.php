@@ -8,7 +8,7 @@
     {
         die('Si è verificato un errore '. $conn->connect_error);
     }
-    $sql = 'SELECT * FROM `stanze`';
+    $sql = 'SELECT * FROM `prenotazioni_has_ospiti`';
     $result = $conn->query($sql);
     $rooms = [];
     if ($result->num_rows > 0)

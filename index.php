@@ -20,11 +20,9 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Numero Stanza</th>
-                        <th>Piano</th>
-                        <th>Numero Letti</th>
-                        <th>Creata il</th>
-                        <th>Aggiornata il</th>
+                        <th>Prenotazione ID</th>
+                        <th>Ospite ID</th>
+                      
                     </tr>
                 </thead>
                 <tbody>
@@ -32,11 +30,8 @@
                   <?php foreach ($rooms as $room) { ?>
                   <tr>
                       <td><?php echo $room['id']; ?></td>
-                      <td><?php echo $room['room_number']; ?></td>
-                      <td><?php echo $room['floor']; ?></td>
-                      <td><?php echo $room['beds']; ?></td>
-                      <td><?php echo $room['created_at']; ?></td>
-                      <td><?php echo $room['updated_at']; ?></td>
+                      <td><?php echo $room['prenotazione_id']; ?></td>
+                      <td><?php echo $room['ospite_id']; ?></td>
                   </tr>
                   <?php  } ?>
                 </tbody>
