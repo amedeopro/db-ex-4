@@ -15,7 +15,21 @@
   </head>
   <body>
 
-    
+    <?php foreach ($ospiti as $ospite) { ?>
+      <?php if ($idospite == $ospite['id'] ) { ?>
+        <ul>
+          <li><?php echo $ospite['id']; ?></li>
+          <li><?php echo $ospite['name']; ?></li>
+          <li><?php echo $ospite['lastname']; ?></li>
+          <li><?php echo $ospite['date_of_birth']; ?></li>
+          <li><?php echo $ospite['document_type']; ?></li>
+          <li><?php echo $ospite['document_number']; ?></li>
+        </ul>
+
+      <?php } ?>
+
+
+      <?php } ?>
 
   </body>
 </html>

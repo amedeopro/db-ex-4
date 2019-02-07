@@ -18,4 +18,15 @@
             $rooms[] = $row;
         }
     }
+
+    $ospitiSql = 'SELECT * FROM `ospiti`';
+    $result = $conn->query($ospitiSql);
+    $ospiti = [];
+    if ($result->num_rows > 0)
+    {
+        while ($row = $result->fetch_assoc())
+        {
+            $ospiti[] = $row;
+        }
+    }
 ?>
