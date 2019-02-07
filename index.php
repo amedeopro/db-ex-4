@@ -22,7 +22,7 @@
                         <th>ID</th>
                         <th>Prenotazione ID</th>
                         <th>Ospite ID</th>
-                      
+
                     </tr>
                 </thead>
                 <tbody>
@@ -31,7 +31,7 @@
                   <tr>
                       <td><?php echo $room['id']; ?></td>
                       <td><?php echo $room['prenotazione_id']; ?></td>
-                      <td><?php echo $room['ospite_id']; ?></td>
+                      <td> <a href="http://localhost/db-ex-4/dettaglio-ospite.php?idospite=<?php echo $room['ospite_id']; ?>"> <?php echo $room['ospite_id']; ?></a></td>
                   </tr>
                   <?php  } ?>
                 </tbody>
