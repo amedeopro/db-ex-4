@@ -31,8 +31,6 @@
             </table>
 
         </div>
-
-        <script id="entry-template" type="text/x-handlebars-template">
           <tr>
             <?php include 'database.php'; ?>
             <?php foreach ($rooms as $room) { ?>
@@ -45,6 +43,6 @@
           <?php  } ?>
 
           </tr>
-        </script>
+
     </body>
 </html>
